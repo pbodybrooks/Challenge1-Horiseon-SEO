@@ -24,7 +24,23 @@ body {
     color: #d9dcd6;
 }
 
-.header div {
+/* deleted .header div */
+
+.header ul {     /* renamed .header div ul to .header ul, combined .header div into this class */
+    list-style-type: none;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header ul li {     /* removed div from class name as the div no longer exists */
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* .header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -39,7 +55,7 @@ body {
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
-}
+} */
 
 a {
     color: #ffffff;
@@ -75,7 +91,7 @@ p {
     margin-left: 20px;
 }
 
-.benefits {
+.benefits {     /* combined .benefit-details into .benefits as it was redundant*/
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -84,14 +100,16 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
-
-.benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
+/* .benefit-details {
+    margin-bottom: 32px;
+    color: #ffffff;
+} */
+
+/* .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -99,9 +117,14 @@ p {
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
+} */
+
+.benefits h3 {      /* combined .benefit-lead/brand/cost h3 into .benefits as it was redundant*/
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.benefit-lead h3 {
+/* .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
@@ -114,9 +137,14 @@ p {
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
-}
+} */
 
-.benefit-lead img {
+.benefits img {      /* combined .benefit-lead/brand/cost h3 into .benefits as it was redundant*/
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+/* .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -132,9 +160,9 @@ p {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
+} */
 
-.search-engine-optimization {
+#search-engine-optimization { /* changed from a class to an id*/
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -161,7 +189,7 @@ p {
     color: #ffffff;
 }
 
-.search-engine-optimization img {
+#search-engine-optimization img {
     max-height: 200px;
 }
 
@@ -173,7 +201,7 @@ p {
     max-height: 200px;
 }
 
-.search-engine-optimization h2 {
+#search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
