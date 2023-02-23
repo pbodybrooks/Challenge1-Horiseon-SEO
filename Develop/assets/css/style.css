@@ -165,7 +165,8 @@ p {
     max-width: 150px;
 } */
 
-#search-engine-optimization { /* changed from a class to an id*/
+
+ #search-engine-optimization { /* changed from a class to an id*/
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -190,9 +191,9 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-}
+} 
 
-#search-engine-optimization img {
+ #search-engine-optimization img {
     max-height: 200px;
 }
 
@@ -216,7 +217,7 @@ p {
 
 .social-media-marketing h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 36px; 
 }
 
 .footer {
