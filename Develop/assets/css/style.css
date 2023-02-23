@@ -1,72 +1,58 @@
-* {
+* { /* applies properties to all elements */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
+body { /* specify background color for body of webpage */
     background-color: #d9dcd6;
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-}
-
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-.header h1 .seo {
-    color: #d9dcd6;
-}
-
-/* deleted .header div */
-
-.header ul {     /* renamed .header div ul to .header ul, combined .header div into this class */
-    list-style-type: none;
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.header ul li {     /* removed div from class name as the div no longer exists */
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/* .header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.header div ul {
-    list-style-type: none;
-}
-
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-} */
-
-a {
-    color: #ffffff;
+/* moved a and p to top of stylesheet for organization & flow */
+a { /* this type selector sets properties for all a (anchor) elements */
+    color: #ffffff; /* link text color */
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
+p { /* this type selector sets properties for all p (paragraph) elements */
+    font-size: 16px; /* paragraph text font size */
 }
 
-.hero {
+.header { /* header/nav bar properties including padding, fonts, text & bkgd colors */
+    padding: 20px; /* sets padding associated with the box model */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c; /* color of the background in header */
+    color: #ffffff; /* color of the text in header */
+}
+
+.header h1 { /* styles the h1 header (one per webpage) and sets the font size for "Horiseon" */
+    display: inline-block; /* elements will be in the same line */
+    font-size: 48px;
+}
+
+.header h1 .seo { /* slightly changes the color of the span "seo" in "Horiseon" */
+    color: #d9dcd6;
+}
+
+/* deleted .header div as it no longer exists in html*/
+
+/* renamed .header div ul to .header ul, combined .header div into this class */
+.header ul {     /* sets properties for unordered list items (navigation menu) */
+    list-style-type: none;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* removed div from class name as the div no longer exists */
+.header ul li {     /* styles individual list items */
+    display: inline-block; /* elements will be in the same line */
+    margin-left: 25px;
+}
+
+.hero { /* identifies and styles the hero image - size, position, margins, etc. */
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -75,23 +61,46 @@ p {
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-.content {
+.content { /* styles the main section */
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {     /* combined .benefit-details into .benefits as it was redundant*/
+/*consolidated search-engine-optimization, online-reputation-management, and social-media-marketing classes into 
+one class, "marketing-solutions", to use fewer lines*/
+.marketing-solutions { /*styles each of the three sections in <main> */
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/*consolidated separate img classes for the three main sections into one to use fewer lines*/
+.marketing-solutions img { /* styles images pertaining to each of the three sections in <main> */
+    max-height: 200px;
+}
+
+.float-left { /*bias the SEO and social media mktg images to the left */
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right { /* bias the online rep mgmt image to the right */
+    float: right;
+    margin-left: 25px;
+}
+
+/*consolidated separate h2 classes for the three main sections into one to use fewer lines*/
+.marketing-solutions h2 { /* styles the headers for each section in <main>  */
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* consolidated .benefit-lead/-brand/-cost color into .benefits as it was redundant and used more lines*/
+.benefits {     /* stles everything in the aside */
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -103,130 +112,32 @@ p {
     color: #ffffff;
 }
 
-/* .benefit-details {
-    margin-bottom: 32px;
-    color: #ffffff;
-} */
-
-/* .benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-} */
-
-.benefits h3 {      /* combined .benefit-lead/brand/cost h3 into .benefits as it was redundant*/
+/* consolidated .benefit-lead/-brand/-cost h3 into .benefits h3 to use fewer lines*/
+.benefits h3 {      /* styles headers in the aside */
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefits p {
+/* consolidated .benefit-lead/-brand/-cost img into .benefits img to use fewer lines*/
+.benefits img {      /* styles headers in the aside */
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* creates the margin needed to space the three sections appropriately*/
+.benefits p {       
     margin-bottom: 32px
 }
 
-/* .benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-} */
-
-.benefits img {      /* combined .benefit-lead/brand/cost h3 into .benefits as it was redundant*/
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-/* .benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-} */
-
-
- #search-engine-optimization { /* changed from a class to an id*/
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-} 
-
- #search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-#search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px; 
-}
-
-.footer {
+.footer { /* styles the footer */
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h4 { /*replaced h2 with h4 to follow header hierarchy update in html*/
+/* replaced h2 with h4 to follow header hierarchy update in html */
+.footer h4 { /* specifies the font size for the h4 heading in the footer */
     font-size: 20px;
 }
