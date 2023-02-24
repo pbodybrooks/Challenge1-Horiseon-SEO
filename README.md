@@ -5,7 +5,7 @@ repo for challenge01 (hw01)
 
 This is a refactory coding project for a marketing agency, Horiseon, that specializes in digital marketing solutions. The objective of this project is to improve the webpage's accessability and quality of code. The motivation behind this project was to teach myself about semantic HTML coding and the importance of webpage accessability, creating efficient code that minimizes the number of lines required to function, and learning how to properly organize the flow of an application's code. It also served as first expose to commenting and detailing the changes and improvements made.
 
-![Screenshot of Horison webpage](assets/horiseon-webpage-screenshot.png)
+![Screenshot of Horison webpage](Develop/assets/horiseon-webpage-screenshot.png)
 
 ## Installation
 
