@@ -13,7 +13,7 @@ N/A
 
 ## Usage
 
-To use the webpage that has been improved as a result of this project, navigate to the webpage at this URL: https://pbodybrooks.github.io/challenge01-parker-brook/
+To use the webpage that has been improved as a result of this project, navigate to the webpage at this URL: https://pbodybrooks.github.io/Challenge1-Horiseon-SEO/
 You can click the three navigation links at the top to be taken to each of the three main sections of the webpage describing Horiseon's solutions.
 
 ## Credits
